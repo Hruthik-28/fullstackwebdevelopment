@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Out</title>
+</head>
+<body>
+    <button id="btn">Dont Bring The Cursor Here</button>
+     
+    <!-- CSS -->
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+        let btn = document.getElementById("btn")
+        btn.addEventListener("mouseover", hey)
+        btn.addEventListener("mouseout", hello = () => {
+            btn.innerText = "Please!!! Dont leave Me alone"
+            btn.style.backgroundColor = "blue"
+        })
+        function hey() {
+            btn.innerText = "Stay here, Dont leave Me !!!"
+            btn.style.backgroundColor = "red"
+            btn.style.color = "#fff"
+        }
+
+
+    </script>
+</body>
+</html>

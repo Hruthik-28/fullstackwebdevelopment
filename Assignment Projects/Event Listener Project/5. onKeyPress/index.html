@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Key Press</title>
+</head>
+<body>
+    <h1>Type Anything</h1>
+    <input type="text" name="input" id="input">
+    <p id="para"></p>
+     
+    <!-- CSS -->
+    <style>
+        body{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        input{
+            padding: 20px 40px;
+            font-size: 20px;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+        let inp = document.getElementById("input")
+        let para = document.getElementById("para")
+        inp.addEventListener("keypress", key)
+
+        function key(event) {
+            para.textContent += "key " + event.key + " "
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
