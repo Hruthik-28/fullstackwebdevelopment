@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* Page 1 content ka header */
+header hr{
+  margin: 20px 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  height: 50px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page1{
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Photos/mainBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 100px;
+  color: #fff;
+}
+
+.page1-main{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+
+}
+
+.page1-main h1{
+  font-size: 70px;
+}
+
+.page1-main p{
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* designing button  */
+button{
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6464ec;
+  font-size: 15px;
+  font-weight:900;
+  color: #fff;
+}
+
+button:hover{
+  cursor: pointer;
+  color: #6464ec;
+  background-color: #fff;
+}
+
+/* Multiple Logo Name  */
+.logo-name {
+  padding: 30px 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  top: 45%;
+  box-shadow: 0px 4px 120px rgba(58, 86, 78, 0.2);
+}
+
+.logo-name img{
+  padding: 10px 40px;
+}
+
+/* 2nd page displaying all real estate props in card */
+.card-wrapper-section{
+  position: relative;
+  top: 10vh;
+}
+
+.card-wrapper-section h1{
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  width: 70%;
+  position: relative;
+  left: 15vw;
+}
+
+.card img {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  bottom: 40px;
+  width: 18vw;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box h3{
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+.card-box p{
+  color: #6464ec;
+  font-weight: 600;
+}
+
+/* 3rd page Featuring real estate houses */
+/* Feature estate-1  */
+.feature-details1 {
+  margin-top: 60vh;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-image1 img{
+  height: 450px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.feature-image1 img:nth-child(2) {
+  height: 350px;
+  width: 405px;
+  bottom: 62vh;
+  left: 100px;
+}
+
+.feature-text1 {
+  height: 40vh;
+  width: 50vw;
+  position: relative;
+  bottom: 25vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 200px;
+}
+
+.feature-text1 h1, .feature-text2 h1{
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.feature-text1 p, .feature-text2 p{
+  font-weight: 500;
+}
+
+/* Feature estate-2 */
+.feature-details2 {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-details2 img:first-child{
+  height: 350px;
+  position: absolute;
+  border-radius: 20px;
+  right: 120px;
+  width: 475px;
+}
+
+.feature-details2 img:last-child{
+  height: 450px;
+  width: 650px;
+}
+
+.feature-text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40vh;
+  margin-left: 100px;
+}
+
+
+/* subscribe to our newsletter section */
+.subscribe{
+  height: 50vh;
+  width: 80vw;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6464ec;
+  position: relative;
+  left: 9.5vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.subscribe h1{
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.subscribe  p{
+  width: 40vw;
+}
+
+.subscribe button {
+  color:#6464ec;
+  background-color: #fff;
+}
+
+.subscribe button:hover {
+  color: #fff;
+  background-color: #6464ec;
+}
+
+.gmail input {
+  padding: 15px 40px;
+  width: 35vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #9a9afe;
+}
+
+.gmail img {
+  position: relative;
+  right: 50px;
+  top: 6px;
+}
+
+footer{
+  display: flex;
+  margin-top: 10vh;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 30vh;
+  margin-left: 150px;
+}
+
+.left-footer img{
+  height: 50px;
+}
+
+.left-footer ul{
+  display: flex;
+  gap: 20px;
+}

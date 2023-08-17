@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #0f0f10;
+    color: #ffffff;
+}
+
+body{
+    height: 550vh;
+    background-color: #0f0f10;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    text-decoration: underline ;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #1e1e1e;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+
+button:hover{
+    background-color: #777777;
+    color: #0f0f10;
+    cursor: pointer;
+}
+button img{
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+
+.container{  
+    margin: 0 10vh;
+}
+/* Top section  */
+/* Header  */
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Left header content */
+.logo{
+    flex: 1;
+}
+.main_image{
+    flex: 2;
+    position: relative;
+    bottom: 50px;
+}
+.logo img{
+    margin: 80px;
+    height: 30px;
+    width: 30px;      
+}
+.main_image img{
+    height: 70vh;   
+}
+.left_header{
+    display: flex;  
+    width: 50%;
+}
+
+/* Right header content  */
+
+.right_header{
+    width: 50%;
+}
+.right_header nav ul{
+    padding: 80px 0;
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.right_header nav ul li{
+    font-weight: 600;
+}
+.right_header nav ul li button{
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.main_description{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+}
+.main_description > .on_ear_image {
+    width: 30vw;
+    flex: 0.5;
+}
+.on_ear_image img{
+    height: 100px;
+}
+
+.main_description_text{
+    
+    margin-right: 10vw;
+    width: 30vw;
+    height: 35vh;
+}
+.main_description_text h1{
+    font-size: 70px;
+}
+.main_description_text span{
+    font-size: medium;
+    font-weight: 500;
+}
+.main_description_text p{
+    font-size: medium;
+    font-weight: lighter;
+    line-height: 25px;
+}
+.main_description button{
+    margin: 10px 21vw 0 0;
+    padding: 10px 40px;   
+}
+.add_to_bag_button{
+    flex: 2;
+    justify-content: space-between;
+}
+
+.add_to_bag_button img:last-child{
+    background-color: transparent;
+}
+.add_to_bag_button > button > img{
+    background-color: rgb(30, 30, 30);
+    
+}
+.add_to_bag_button button {
+    font-size: 14px;
+    font-weight: 500;   
+}
+
+/* Brand Icons section  */
+.brand_icons_section > ul{
+    display: flex;
+    height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vh;
+}
+.brand_icons_section > ul > li >img{
+    height: 25px;
+}
+.brand_icons_section > ul >.list_3 img{
+    height: 22px;
+}
+.brand_icons_section > ul >.list_4 img{
+    height: 18px;
+}
+
+/* Specs Section */
+.specs_section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.specs_logo {
+    height: 10vh;
+}
+
+.specs_description{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+/* specs left content  */
+.specs_left{
+    width: 25vw;
+    height: 60vh;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.bluetooth,.microphone {
+    padding: 0 9vw;
+    height: 15vh;   
+}
+.battery ,.load{
+    padding: 0 5vw;
+    height: 15vh;
+    
+}
+
+.specs_left span{
+    font-size: x-small;
+    font-weight: 300;
+}
+.specs_right{
+    width: 25vw;
+    align-self: center;
+    
+}
+/* specs right content */
+.specs_right img{
+   height: 350px;
+}
+
+/* case section  */
+.case_section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ /* case logo  */
+.case-logo{
+    height: 10vh;
+}
+
+.case_description{
+    display: flex;
+    align-items: center;
+   
+}
+ /* left case content  */
+.left_case{
+    width: 30vw;
+    
+}
+
+.left_case img{
+    height: 350px;
+    padding-left: 7vw;
+}
+ /* right case content  */
+.right_case{
+    width: 20vw;
+    height: 30vh;
+}
+
+.right_case p{
+    font-size: medium;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.right_case button{
+    margin-top: 25px;
+    padding: 10px 40px;  
+}
+
+.right_case button img:last-child{
+    background-color: transparent;
+}
+
+/* Buy Now section */
+.buy_now_section{
+    height: 50vh;
+    width: 50v;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+ 
+/* Right buy now section  */
+.right_buy_now img{
+    background-color: transparent;
+    height: 300px;  
+}
+
+/* Left Buy now section  */
+.left_buy_now,.left_buy_now h2, .left_buy_now p,.right_buy_now img{
+    background-color: #1e1e1e;
+}
+
+.left_buy_now{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.left_buy_now h2{
+    font-weight: 800;
+}
+.left_buy_now p{
+    font-size: medium;
+    font-weight: lighter;
+    line-height: 25px;
+}
+.left_buy_now button{
+    background-color: #0f0f10;
+    width: 150px;
+    padding: 10px 20px;
+}
+
+.left_buy_now button img:last-child{
+    background: transparent;
+}
+
+.left_buy_now button:hover{
+    color: #1e1e1e;
+    background-color: #e6e6e6;
+}
+
+/* Choose your style section */
+.choose_your_style_section{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choose_your_style_logo{
+    height: 20vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  
+  .grid-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #151515;
+    border-radius: 10px;
+  }
+  
+  .grid-item img {
+    max-width:60%;
+    max-height: 200px;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+    bottom: 50%;
+  }
+  
+  .color {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .color span{
+    background-color: transparent;
+    font-weight: 400;
+  }
+
+  
+  .grid-item img:last-child {
+    max-width: 30px;
+    position: relative;
+    margin: 0 auto;
+    left: 50px;
+    bottom: 30px;
+  }
+
+/* Footer  */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    line-height: 30px;
+}
+
+.footer-text h4{
+    margin-bottom: 10px;
+
+}
+
+.footer-text a{
+    font-weight: 200;
+}
+
+footer .links>ul{
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.beats_logo img{
+    position: relative;
+    bottom: 60px;
+}
+
+.email{
+    position: relative;
+    display: inline-block;
+}
+
+.email input{
+    padding:10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.email::after{
+  content:  'Submit';
+  position: absolute;
+  right: 5px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-sec{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+

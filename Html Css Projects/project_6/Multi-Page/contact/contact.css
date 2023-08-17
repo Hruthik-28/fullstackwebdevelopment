@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+li a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* Navigation  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+    height: 10vh;
+}
+
+.logo{
+    flex: 2;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.list{
+   flex: 1;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* contact form  */
+.contact-form{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+legend{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 
+                0 -4px 6px rgba(0, 0, 0, 0.2),
+                4px 0 6px rgba(0, 0, 0, 0.2),
+                -4px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+input,textarea{
+    display: flex;
+    width: 15vw;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+label{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+button{
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px 85px;
+    background-color: #42d69d;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #42d69d;
+    background-color: #ffffff;
+}
+
+
