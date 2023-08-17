@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f5ed;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Unbounded', cursive;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+header nav{
+    padding: 20px 10%;
+    height: 15vh;
+    
+}
+
+header nav ul{
+    display: flex;     
+    align-items: center;  
+
+    
+}
+
+nav ul li{
+    margin-right: 5%;
+    font-weight: 580;
+
+}
+nav ul li img{
+    width: 100px;
+}
+
+header nav ul li:hover{
+    font-weight: 590;
+    text-decoration: underline;
+
+}
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+}
+
+.left_hero_section {
+    width: 40;
+    margin: 50px 0;
+    margin-right: 10%;
+    
+
+}
+
+.left_hero_section h2{
+    font-size: 60px;
+    font-weight: 800px;
+}
+.left_hero_section p{
+    margin: 5% 0;
+    font-weight: lighter;
+    
+}
+.learn_more_button button{    
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b855b;
+}
+.learn_more_button button:hover{
+    cursor: pointer;
+    color: #3b855b;
+    background-color: white;
+    
+}
+
+
+.right_hero_section img {
+    width: 40%;
+    padding: 1%;
+
+}
+
+
+
+
+
+
+
